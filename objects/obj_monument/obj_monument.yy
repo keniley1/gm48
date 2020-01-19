@@ -1,23 +1,23 @@
 {
-    "id": "50dd4118-0a9b-4bea-847c-3f639b46b915",
+    "id": "9bc19807-0c50-41eb-ba9d-7fdedd82fdd3",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_setpiece",
+    "name": "obj_monument",
     "eventList": [
         {
-            "id": "632c2635-f1d5-4272-befd-3faeed86fce1",
+            "id": "fbe323fc-1ea9-45e2-801a-ef009896813a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "50dd4118-0a9b-4bea-847c-3f639b46b915"
+            "m_owner": "9bc19807-0c50-41eb-ba9d-7fdedd82fdd3"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "50dd4118-0a9b-4bea-847c-3f639b46b915",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "d2f8f716-0758-412d-aace-022b516c4351",
+    "spriteId": "cb12ad85-27de-4ae6-94e2-f4d06ec2afc1",
     "visible": true
 }
