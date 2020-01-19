@@ -5,7 +5,7 @@ switch state
 	case moving:
 	{
 		
-		if abs(v) > v_min and keyboard_check(vk_up)
+		if keyboard_check(vk_up) or keyboard_check(vk_right) or keyboard_check(vk_left)
 		{
 			draw_sprite_ext(spr_wake, animation_key % 4, x - 32*cos(theta), y + 32*sin(theta), 1, 1, phi*180/global.pi, c_white, 1)
 		}
