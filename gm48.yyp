@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "6f0cd4b6-4070-4fd9-8089-db4b9f775fc4",
+            "Value": {
+                "id": "17dd7a20-614b-4499-986e-55efb249b8f7",
+                "resourcePath": "objects\\object0\\object0.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "72e551b6-1a8d-4a52-b760-c51deb3400a1",
             "Value": {
                 "id": "0eb8709c-ed9d-430d-95af-fcfa9cec621b",
@@ -143,11 +151,35 @@
             }
         },
         {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "e30de488-9f1d-406f-a55f-46187f628d69",
+                "resourcePath": "options\\linux\\options_linux.yy",
+                "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "b6c59229-d803-4734-a3db-4d7f6ac3b510",
+            "Value": {
+                "id": "b8f86869-9d23-46cd-bfd2-f97ee2fac14b",
+                "resourcePath": "sprites\\spr_boat\\spr_boat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b6fb89ac-a1b1-4846-92f8-4762707a2b1e",
             "Value": {
                 "id": "9f952fca-2e4a-4341-b9c4-e76caa219ff0",
                 "resourcePath": "views\/b6fb89ac-a1b1-4846-92f8-4762707a2b1e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
+            "Value": {
+                "id": "44e514ab-14a0-4d4e-93b1-a798031f650b",
+                "resourcePath": "options\\windows\\options_windows.yy",
+                "resourceType": "GMWindowsOptions"
             }
         },
         {
