@@ -15,7 +15,7 @@ switch state
 			v += accel * global.dt
 		}
 
-		if keyboard_check(vk_down) and abs(v) > v_min
+		if keyboard_check(vk_down) and v > v_min
 		{
 			v += -accel * global.dt
 		}
@@ -26,7 +26,8 @@ switch state
 			
 			if keyboard_check_pressed(vk_space) and abs(v_theta) < v_theta_min
 			{
-				state = fishing
+				state = fishing_extend
+				fishing_extend_countdown = fishing_extend_countdown_time
 			}
 		}
 		else
@@ -69,11 +70,55 @@ switch state
 	}
 	break
 	
+	case fishing_extend:
+	{
+		fishing_extend_countdown += -1
+		
+		//TODO: MAKE SURE IT'S ANIMATED
+		
+		if fishing_extend_countdown <= 0
+		{
+			state = fishing
+			fishing_countdown = fishing_countdown_time
+		}
+	}
+	break
+	
 	case fishing:
 	{
-		if keyboard_check_pressed(vk_space)
+		fishing_countdown += -1
+		
+		//TODO: MAKE SURE IT'S ANIMATED
+		
+		if fishing_countdown <= 0
 		{
-			state = moving	
+			if  distance_to_object(instance_nearest(x, y, obj_setpiece)) < setpiece_radius
+			{
+				state = item_display
+			}
+			else
+			{
+				state = moving	
+			}
+		}
+	}
+	break
+	
+	case item_display:
+	{
+		show_debug_message("ITEM_DISPLAY")
+		
+		if keyboard_check(ord("Y"))
+		{
+			//TODO KEEP ITEM, ADD TO LIST, REMOVE FROM LOCATION, CHECK VICTORY CONDITION
+			state = moving
+			show_debug_message("PRESSED")
+		}
+		
+		if keyboard_check(ord("N"))
+		{
+			state = moving
+			show_debug_message("PRESSED")
 		}
 	}
 	break
@@ -88,9 +133,11 @@ for(var i=0; i<instance_number(obj_setpiece); i++)
 	if (point_distance(x, y, inst.x, inst.y) < setpiece_radius) 
 	{
 		find_setpiece_object = true
+		show_debug_message("TRUE")
 	} 
 	else
 	{
 		find_setpiece_object = false
+		show_debug_message("FALSE")
 	}
 }

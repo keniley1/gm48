@@ -10,11 +10,25 @@ switch state
 			draw_sprite_ext(spr_wake, animation_key % 4, x - 32*cos(theta), y + 32*sin(theta), 1, 1, phi*180/global.pi, c_white, 1)
 		}
 	}
+	break
+	
+	case fishing_extend:
+	{
+		draw_sprite_ext(spr_arm_extend, -1, x, y, 1, 1, theta*180/global.pi + 90, c_white, 1)
+	}
+	break
 	
 	case fishing:
 	{
-
+		draw_sprite_ext(spr_arm_fish, animation_key % 5, x, y, 1, 1, theta*180/global.pi + 90, c_white, 1)
 	}
+	break
+	
+	case item_display:
+	{
+		
+	}
+	break
 }
 
 ebb_scale = 1 + ebb_scaling_factor * sin(2 * global.pi * animation_key / ebb_period)
