@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "64aa3537-1b84-4e21-bf98-584efc7fff6f",
+            "Value": {
+                "id": "dde16b68-0ac2-408b-abf4-ec1585813da9",
+                "resourcePath": "sounds\\sound_ambient\\sound_ambient.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "67b7b0de-c7fb-46b5-9c4f-e556dc974b25",
             "Value": {
                 "id": "75db174e-78a1-4540-b017-5d4ea6cd8dfe",
@@ -156,6 +164,14 @@
                 "id": "e41b76f9-a992-42db-8f20-db3eab491df6",
                 "resourcePath": "views\\81a8dc4f-7884-42b2-bd02-fe35a94f7620.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "87f049a5-41c4-477b-9a49-f1e5bac1762d",
+            "Value": {
+                "id": "252f4407-18d7-4427-a328-faaef95fc780",
+                "resourcePath": "objects\\sound_controller\\sound_controller.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -244,6 +260,14 @@
                 "id": "d0777b4f-f287-4a99-8666-bfc93be7e0df",
                 "resourcePath": "views\/cfa90f98-8934-4fdc-9b12-6bb47e0b592a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d89f72d2-3908-474e-bfeb-d6d2bbc0e1b2",
+            "Value": {
+                "id": "02b6a98a-4c6c-46a4-aabb-f31775badfb2",
+                "resourcePath": "sounds\\sound_bg_music\\sound_bg_music.yy",
+                "resourceType": "GMSound"
             }
         },
         {
