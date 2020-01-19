@@ -31,5 +31,10 @@ find_setpiece_object = false
 
 //State Machine
 moving = 1
-fishing = 2
+fishing_extend = 2
+fishing = 3
+item_display = 4
+
 state = moving
+fishing_extend_countdown_time = 1 * 60
+fishing_countdown_time = 5 * 60

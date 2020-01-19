@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "5da43ff7-a006-4886-afd0-790c4b41fce0",
+            "Value": {
+                "id": "8201ab2c-2c15-4013-ba84-4a4711d8d874",
+                "resourcePath": "sprites\\spr_arm_fish\\spr_arm_fish.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5ef9fdc9-8a70-4fbf-bd78-e9ef35d91943",
             "Value": {
                 "id": "a07d7f10-37f0-4a9b-b177-57493cece155",
@@ -316,6 +324,14 @@
                 "id": "07fca0e8-a668-4075-8162-52648ab1fd81",
                 "resourcePath": "objects\/obj_rock\/obj_rock.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dfbddc51-b8a7-4bec-a937-36f546df0777",
+            "Value": {
+                "id": "be513847-7a15-4c81-859c-f2d380548612",
+                "resourcePath": "sprites\\spr_arm_extend\\spr_arm_extend.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
