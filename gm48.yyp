@@ -194,7 +194,7 @@
             "Key": "87f049a5-41c4-477b-9a49-f1e5bac1762d",
             "Value": {
                 "id": "252f4407-18d7-4427-a328-faaef95fc780",
-                "resourcePath": "objects\/sound_controller\/sound_controller.yy",
+                "resourcePath": "objects\\obj_sound_controller\\obj_sound_controller.yy",
                 "resourceType": "GMObject"
             }
         },

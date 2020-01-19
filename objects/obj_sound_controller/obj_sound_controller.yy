@@ -2,7 +2,7 @@
     "id": "87f049a5-41c4-477b-9a49-f1e5bac1762d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "sound_controller",
+    "name": "obj_sound_controller",
     "eventList": [
         {
             "id": "dc0db0fe-acf0-49b9-baf5-022ead1b09a7",
