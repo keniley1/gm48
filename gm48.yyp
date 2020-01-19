@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "171f841c-1f28-48ca-9d2f-feb73911d239",
+            "Value": {
+                "id": "a8e3d6c8-1f6e-40bb-9039-ef6dfe0b27d6",
+                "resourcePath": "objects\\game_state_controller\\game_state_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1f6fc8b5-6399-473d-a89e-d0cf461bca61",
             "Value": {
                 "id": "e47ed5dd-7b87-4ea6-a9c0-c5d6c33fc1d6",
@@ -122,7 +130,7 @@
             "Key": "6f0cd4b6-4070-4fd9-8089-db4b9f775fc4",
             "Value": {
                 "id": "17dd7a20-614b-4499-986e-55efb249b8f7",
-                "resourcePath": "objects\\object0\\object0.yy",
+                "resourcePath": "objects\\obj_boat\\obj_boat.yy",
                 "resourceType": "GMObject"
             }
         },
