@@ -17,3 +17,7 @@ v_theta_min = 0.1*global.pi/180
 v_theta_max = 5.0*global.pi/180
 a_theta = 0.2*global.pi/180
 accel = 0.1
+
+// Setpiece options
+setpiece_radius = 100
+find_setpiece_object = false

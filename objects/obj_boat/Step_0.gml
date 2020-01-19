@@ -55,3 +55,18 @@ phi = lerp(phi, theta, k_phi)
 
 v_x = v * cos(phi)
 v_y = - v * sin(phi)
+
+// Check if boat is within radius of setpiece object
+// If it is, set find_setpiece_object == true
+for(var i=0; i<instance_number(obj_setpiece); i++) 
+{
+	var inst = instance_find(obj_setpiece,i);
+	if (point_distance(x, y, inst.x, inst.y) < setpiece_radius) 
+	{
+		find_setpiece_object = true
+	} 
+	else
+	{
+		find_setpiece_object = false
+	}
+}

@@ -6,3 +6,10 @@ repeat(50){
     yCord = random_range(0, 768*4);
     instance_create_depth(xCord, yCord, 1, obj_rock);
 }
+
+// Here we place the setpieces
+repeat(12){
+	xCord = random_range(0, 1024*4);
+	yCord = random_range(0, 768*4);
+	instance_create_depth(xCord, yCord, 1, obj_setpiece);
+}
