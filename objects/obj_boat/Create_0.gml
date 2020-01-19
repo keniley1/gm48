@@ -9,6 +9,7 @@ v_theta = 0 // angular speed in radians/step
 k_theta = 0.1 // multiplicative friction factor on theta
 k = 0.01 // multiplicative friction factor on speed
 k_phi = 0.05 // lerp parameter from phi to theta
+mass = 1
 
 v_max = 5 //max speed
 v_min = 0.1 //min speed below which it locks to zero
