@@ -2,6 +2,7 @@
 // Movement code for boat
 
 animation_key += 1
+nearest_setpiece = instance_nearest(x, y, obj_setpiece)
 
 switch state
 {
@@ -92,7 +93,7 @@ switch state
 		
 		if fishing_countdown <= 0
 		{
-			if  distance_to_object(instance_nearest(x, y, obj_setpiece)) < setpiece_radius
+			if  distance_to_object(nearest_setpiece) < setpiece_radius and nearest_setpiece.has_item
 			{
 				state = item_display
 			}
@@ -113,6 +114,16 @@ switch state
 			//TODO KEEP ITEM, ADD TO LIST, REMOVE FROM LOCATION, CHECK VICTORY CONDITION
 			state = moving
 			show_debug_message("PRESSED")
+			
+			time_capsule.items[time_capsule.num_items] = nearest_setpiece.sprite
+			time_capsule.num_items += 1
+			
+			nearest_setpiece.has_item = false
+			
+			if time_capsule.num_items >= time_capsule.max_num_items
+			{
+				state = end_game_1
+			}
 		}
 		
 		if keyboard_check(ord("N"))
@@ -122,6 +133,41 @@ switch state
 		}
 	}
 	break
+	
+	case end_game_1:
+	{
+		if keyboard_check_pressed(vk_anykey)
+		{
+			state = end_game_2
+		}
+	}
+	break
+	
+	case end_game_2:
+	{
+		if keyboard_check_pressed(vk_anykey)
+		{
+			state = end_game_3
+		}
+	}
+	break
+	
+	case end_game_3:
+	{
+		if keyboard_check_pressed(vk_anykey)
+		{
+			game_end()
+		}
+	}
+	break
+	
+	case menu:
+	{
+		if keyboard_check_pressed(vk_anykey)
+		{
+			state = moving
+		}
+	}
 }
 
 

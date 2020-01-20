@@ -11,3 +11,4 @@
 //setpiece_sprite[3] = spr_watertower;
 //setpiece_sprite[4] = spr_building;
 //setpiece_sprite[5] = spr_garage;
+has_item = true
